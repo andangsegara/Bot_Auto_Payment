@@ -8,7 +8,7 @@ from utils import rupiah
 init_db()
 
 # ===== DB helpers =====
-def inser_link(creator_id, title, content, price):
+def insert_link(creator_id, title, content, price):
     conn = get_conn()
     c = conn.cursor()
     c.execute(
