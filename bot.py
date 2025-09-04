@@ -12,7 +12,7 @@ def insert_link(creator_id, title, content, price):
     conn = get_conn()
     c = conn.cursor()
     c.execute(
-        "INSERT INTO Link (creator_id, tittle, content, price)VALUES(?.?.?)",
+        "INSERT INTO Link (creator_id, title, content, price)VALUES(?.?.?)",
         (creator_id, title, content, price)
     )
     lid = c.lastrowid
